@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4203a9, #90ba);
+  color: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
+.calculetor {
+  width: 100%;
+  max-width: 600px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.calculetor h1 {
+  font-size: 60px;
+}
+.calculetor h1 span {
+  color: #ffff76;
+}
+.input-box {
+  margin: 40px 0;
+  padding: 35px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+.input-box input {
+  flex: 1;
+  margin-right: 20px;
+  padding: 14px 20px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.input-box button {
+  background: #ffff76;
+  border: 0;
+  outline: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+.input-box input::-webkit-calendar-picker-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-size: 30px;
+  background-position: calc(100% - 10px);
+  cursor: pointer;
+}
+#result {
+  font-size: 25px;
+}
+#result span {
+  color: #ffff76;
+}
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+  .calculetor {
+    margin-left: 5%; /* Adjust margin for smaller screens */
+    margin-top: 5%; /* Adjust margin for smaller screens */
+  }
+}
+
+/* For screens smaller than 576px (e.g., small smartphones) */
+@media (max-width: 576px) {
+  .calculetor {
+    margin-left: 2%; /* Further adjust margin for smaller screens */
+    margin-top: 2%; /* Further adjust margin for smaller screens */
+  }
+  .calculetor h1 {
+    font-size: 40px; /* Decrease title font size for smaller screens */
+  }
+  .input-box {
+    padding: 20px; /* Decrease padding for input box on smaller screens */
+  }
+  .input-box input {
+    font-size: 16px; /* Decrease font size for input field on smaller screens */
+  }
+  .input-box button {
+    padding: 12px 24px; /* Decrease padding for button on smaller screens */
+  }
+  #result {
+    font-size: 20px; /* Decrease font size for result on smaller screens */
+  }
+}
+
+/* For screens larger than 1200px (e.g., large desktops) */
+@media (min-width: 1200px) {
+  .calculetor {
+    max-width: 800px; /* Adjust max-width for larger screens */
+  }
+}
